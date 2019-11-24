@@ -1,0 +1,72 @@
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url(bg.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        height: 90vh;
+    }
+
+    .main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main h1{
+        font-size: 50px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-shadow: 0 2px 0 rgba(0,0,0.0.5);
+    }
+
+    .main p{
+        line-height: 30px;
+        margin: 0;
+        color: #fff;
+        font-size: 16px;
+    }
+.main p article{
+    display: flex;
+}
+    .main a{
+        background: crimson;
+        text-decoration: none;
+        border: olive;
+        color: #fff;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 33px;
+        padding: 12px 18px;
+    }
+
+
+    span:before{
+        content: ' ';
+        animation: animate infinite 12s;
+    }
+
+    @keyframes animate{
+        0%{
+            content: 'Shravan';
+            color: crimson;
+        }
+        35%{
+            content: 'Sandeep';
+            color: green;
+        }
+        65%{
+            content: 'Manoj';
+            color: yellow;
+        }
+        100%{
+            content: 'Hemendra';
+            color: aqua;
+        }
+    }
